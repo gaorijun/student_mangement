@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.suny</groupId>
+        <artifactId>student_mangement</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.suny</groupId>
+    <artifactId>student_mangement_service</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>student_mangement_service</name>
+    <description>Demo project for Spring Boot</description>
+
+    <dependencies>
+        <!--        pojo-->
+        <dependency>
+            <groupId>com.suny</groupId>
+            <artifactId>student_mangement_pojo</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--        dao-->
+        <dependency>
+            <groupId>com.suny</groupId>
+            <artifactId>student_mangement_dao</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>

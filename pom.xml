@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--    父工程继承SpringBoot提供的父工程-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.0</version>
+    </parent>
+    <!--    项目说明：作为聚合工程的父工程-->
+    <groupId>com.suny</groupId>
+    <artifactId>student_mangement</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <!--    项目基本信息-->
+    <packaging>pom</packaging>
+    <name>student_mangement</name>
+    <description>学生管理系统</description>
+
+    <!--    模块说明：这里说明多个子模块-->
+    <modules>
+        <module>student_mangement_common</module>
+        <module>student_mangement_pojo</module>
+        <module>student_mangement_dao</module>
+        <module>student_mangement_service</module>
+        <module>student_mangement_controller</module>
+    </modules>
+
+    <!--    版本说明：统一管理依赖-->
+    <properties>
+        <java.version>1.8</java.version>
+        <lombok.version>1.18.22</lombok.version>
+        <mysql.version>5.1.38</mysql.version>
+        <mybatis.version>2.1.2</mybatis.version>
+        <druid.version>1.2.8</druid.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>

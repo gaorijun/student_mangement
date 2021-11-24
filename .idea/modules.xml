@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/student_mangement.iml" filepath="$PROJECT_DIR$/student_mangement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/student_mangement_common/student_mangement_common.iml" filepath="$PROJECT_DIR$/student_mangement_common/student_mangement_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/student_mangement_controller/student_mangement_controller.iml" filepath="$PROJECT_DIR$/student_mangement_controller/student_mangement_controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/student_mangement_dao/student_mangement_dao.iml" filepath="$PROJECT_DIR$/student_mangement_dao/student_mangement_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/student_mangement_pojo/student_mangement_pojo.iml" filepath="$PROJECT_DIR$/student_mangement_pojo/student_mangement_pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/student_mangement_service/student_mangement_service.iml" filepath="$PROJECT_DIR$/student_mangement_service/student_mangement_service.iml" />
+    </modules>
+  </component>
+</project>
