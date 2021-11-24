@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1acc77e8-7b8a-42b2-b57d-7457ea878d3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/student_mangement_controller/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/student_mangement_controller/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +25,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="C:\Study\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../../学习资料/maven-3.8/apache-maven-3.8.1" />
-        <option name="userSettingsFile" value="C:\学习资料\maven-3.8\apache-maven-3.8.1\conf\settings.xml" />
+        <option name="localRepository" value="E:\Develop\maven\repository\maven_repository" />
+        <option name="userSettingsFile" value="E:\Develop\maven\apache-maven-3.5.2-bin\apache-maven-3.5.2\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -50,9 +49,22 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="Spring Boot.StudentMangementControllerApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentMangementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="student_mangement" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.suny.StudentMangementApplication" />
@@ -94,23 +106,10 @@
       <workItem from="1637670411626" duration="4790000" />
       <workItem from="1637675259050" duration="3963000" />
       <workItem from="1637727045655" duration="4195000" />
-      <workItem from="1637732850314" duration="108000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="d8fcb449-d04a-4d5b-9ad6-cb02a0387041">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
