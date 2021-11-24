@@ -1,0 +1,197 @@
+Index: student_mangement_controller/src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># 端口的配置\r\nserver.port=8081\r\n\r\n# 数据库访问配置\r\nspring.datasource.type=com.alibaba.druid.pool.DruidDataSource\r\nspring.datasource.driver-class-name=com.mysql.jdbc.Driver\r\nspring.datasource.url=jdbc:mysql://123.57.140.209:3306/student_management?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8\r\nspring.datasource.username=test\r\nspring.datasource.password=d86b24c49c\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/student_mangement_controller/src/main/resources/application.properties b/student_mangement_controller/src/main/resources/application.properties
+--- a/student_mangement_controller/src/main/resources/application.properties	(revision 2f97ca4f2b6f6113f5c106c190aeffb981f767a2)
++++ b/student_mangement_controller/src/main/resources/application.properties	(date 1637756141358)
+@@ -4,6 +4,7 @@
+ # 数据库访问配置
+ spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
+ spring.datasource.driver-class-name=com.mysql.jdbc.Driver
++spring.datasource.druid.connection-properties=
+ spring.datasource.url=jdbc:mysql://123.57.140.209:3306/student_management?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+ spring.datasource.username=test
+ spring.datasource.password=d86b24c49c
+Index: student_mangement_common/pom.xml
+===================================================================
+diff --git a/student_mangement_common/pom.xml b/student_mangement_common/pom.xml
+deleted file mode 100644
+--- a/student_mangement_common/pom.xml	(revision 2f97ca4f2b6f6113f5c106c190aeffb981f767a2)
++++ /dev/null	(revision 2f97ca4f2b6f6113f5c106c190aeffb981f767a2)
+@@ -1,20 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project xmlns="http://maven.apache.org/POM/4.0.0"
+-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+-    <parent>
+-        <artifactId>student_mangement</artifactId>
+-        <groupId>com.suny</groupId>
+-        <version>0.0.1-SNAPSHOT</version>
+-    </parent>
+-    <modelVersion>4.0.0</modelVersion>
+-
+-    <artifactId>student_mangement_common</artifactId>
+-
+-    <properties>
+-        <maven.compiler.source>8</maven.compiler.source>
+-        <maven.compiler.target>8</maven.compiler.target>
+-    </properties>
+-
+-
+-</project>
+\ No newline at end of file
+Index: student_mangement_service/target/classes/application.properties
+===================================================================
+diff --git a/student_mangement_service/target/classes/application.properties b/student_mangement_service/target/classes/application.properties
+deleted file mode 100644
+--- a/student_mangement_service/target/classes/application.properties	(revision 2f97ca4f2b6f6113f5c106c190aeffb981f767a2)
++++ /dev/null	(revision 2f97ca4f2b6f6113f5c106c190aeffb981f767a2)
+@@ -1,1 +0,0 @@
+-
+Index: student_mangement_controller/target/classes/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># 端口的配置\r\nserver.port=8081\r\n\r\n# 数据库访问配置\r\nspring.datasource.type=com.alibaba.druid.pool.DruidDataSource\r\nspring.datasource.driver-class-name=com.mysql.jdbc.Driver\r\n#将database_name改成自己的数据库的名称\r\nspring.datasource.url=jdbc:mysql://123.57.140.209:3306/student_management?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8\r\nspring.datasource.username=test\r\nspring.datasource.password=d86b24c49c\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/student_mangement_controller/target/classes/application.properties b/student_mangement_controller/target/classes/application.properties
+--- a/student_mangement_controller/target/classes/application.properties	(revision 2f97ca4f2b6f6113f5c106c190aeffb981f767a2)
++++ b/student_mangement_controller/target/classes/application.properties	(date 1637755973519)
+@@ -4,7 +4,6 @@
+ # 数据库访问配置
+ spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
+ spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+-#将database_name改成自己的数据库的名称
+ spring.datasource.url=jdbc:mysql://123.57.140.209:3306/student_management?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+ spring.datasource.username=test
+ spring.datasource.password=d86b24c49c
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile default=\"true\" name=\"Default\" enabled=\"true\" />\r\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <module name=\"student_mangement_common\" />\r\n        <module name=\"student_mangement_service\" />\r\n        <module name=\"student_mangement_dao\" />\r\n        <module name=\"student_mangement_controller\" />\r\n        <module name=\"student_mangement_pojo\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n    <bytecodeTargetLevel>\r\n      <module name=\"student_mangement\" target=\"1.8\" />\r\n      <module name=\"student_mangement_common\" target=\"8\" />\r\n      <module name=\"student_mangement_controller\" target=\"1.8\" />\r\n      <module name=\"student_mangement_dao\" target=\"1.8\" />\r\n      <module name=\"student_mangement_pojo\" target=\"8\" />\r\n      <module name=\"student_mangement_service\" target=\"1.8\" />\r\n    </bytecodeTargetLevel>\r\n  </component>\r\n  <component name=\"JavacSettings\">\r\n    <option name=\"ADDITIONAL_OPTIONS_OVERRIDE\">\r\n      <module name=\"student_mangement\" options=\"-parameters\" />\r\n      <module name=\"student_mangement_common\" options=\"-parameters\" />\r\n      <module name=\"student_mangement_controller\" options=\"-parameters\" />\r\n      <module name=\"student_mangement_dao\" options=\"-parameters\" />\r\n      <module name=\"student_mangement_pojo\" options=\"-parameters\" />\r\n      <module name=\"student_mangement_service\" options=\"-parameters\" />\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 2f97ca4f2b6f6113f5c106c190aeffb981f767a2)
++++ b/.idea/compiler.xml	(date 1637757351774)
+@@ -7,7 +7,6 @@
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
+-        <module name="student_mangement_common" />
+         <module name="student_mangement_service" />
+         <module name="student_mangement_dao" />
+         <module name="student_mangement_controller" />
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1acc77e8-7b8a-42b2-b57d-7457ea878d3b\" name=\"Default Changelist\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"localRepository\" value=\"C:\\Study\\repository\" />\r\n        <option name=\"mavenHome\" value=\"$PROJECT_DIR$/../../../../../../学习资料/maven-3.8/apache-maven-3.8.1\" />\r\n        <option name=\"userSettingsFile\" value=\"C:\\学习资料\\maven-3.8\\apache-maven-3.8.1\\conf\\settings.xml\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"21JFu04ON7lb38XJ9lODpitCkfT\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RequestMappingsPanelOrder0\" value=\"0\" />\r\n    <property name=\"RequestMappingsPanelOrder1\" value=\"1\" />\r\n    <property name=\"RequestMappingsPanelWidth0\" value=\"75\" />\r\n    <property name=\"RequestMappingsPanelWidth1\" value=\"75\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"jdk.selected.JAVA_MODULE\" value=\"1.8\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"MavenSettings\" />\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Spring Boot.StudentMangementControllerApplication\">\r\n    <configuration name=\"StudentMangementApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"student_mangement\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.suny.StudentMangementApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"StudentMangementControllerApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"student_mangement_controller\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.suny.StudentMangementControllerApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"StudentMangementDaoApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"student_mangement_dao\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.suny.StudentMangementDaoApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"StudentMangementServiceApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"student_mangement_service\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.suny.StudentMangementServiceApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1acc77e8-7b8a-42b2-b57d-7457ea878d3b\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1637651502412</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1637651502412</updated>\r\n      <workItem from=\"1637651503784\" duration=\"5011000\" />\r\n      <workItem from=\"1637670411626\" duration=\"4790000\" />\r\n      <workItem from=\"1637675259050\" duration=\"3963000\" />\r\n      <workItem from=\"1637727045655\" duration=\"4195000\" />\r\n      <workItem from=\"1637732850314\" duration=\"108000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 2f97ca4f2b6f6113f5c106c190aeffb981f767a2)
++++ b/.idea/workspace.xml	(date 1637757171983)
+@@ -4,7 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="1acc77e8-7b8a-42b2-b57d-7457ea878d3b" name="Default Changelist" comment="" />
++    <list default="true" id="1acc77e8-7b8a-42b2-b57d-7457ea878d3b" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/student_mangement_controller/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/student_mangement_controller/src/main/resources/application.properties" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -51,6 +54,17 @@
+     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+   </component>
+   <component name="RunManager" selected="Spring Boot.StudentMangementControllerApplication">
++    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
++      <option name="arquillianRunConfiguration">
++        <value>
++          <option name="containerStateName" value="" />
++        </value>
++      </option>
++      <option name="TEST_OBJECT" value="class" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
+     <configuration name="StudentMangementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+       <module name="student_mangement" />
+       <option name="SPRING_BOOT_MAIN_CLASS" value="com.suny.StudentMangementApplication" />
+@@ -92,11 +106,24 @@
+       <workItem from="1637670411626" duration="4790000" />
+       <workItem from="1637675259050" duration="3963000" />
+       <workItem from="1637727045655" duration="4195000" />
+-      <workItem from="1637732850314" duration="108000" />
++      <workItem from="1637732850314" duration="1692000" />
++      <workItem from="1637755584978" duration="1560000" />
++    </task>
++    <task id="LOCAL-00001" summary="测试github连接上传">
++      <created>1637733107415</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1637733107415</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="测试github连接上传" />
++    <option name="LAST_COMMIT_MESSAGE" value="测试github连接上传" />
++  </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n        <option value=\"$PROJECT_DIR$/student_mangement_service/pom.xml\" />\r\n        <option value=\"$PROJECT_DIR$/student_mangement_dao/pom.xml\" />\r\n        <option value=\"$PROJECT_DIR$/student_mangement_controller/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_8\" default=\"true\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 2f97ca4f2b6f6113f5c106c190aeffb981f767a2)
++++ b/.idea/misc.xml	(date 1637757351781)
+@@ -9,6 +9,11 @@
+         <option value="$PROJECT_DIR$/student_mangement_controller/pom.xml" />
+       </list>
+     </option>
++    <option name="ignoredFiles">
++      <set>
++        <option value="$PROJECT_DIR$/student_mangement_common/pom.xml" />
++      </set>
++    </option>
+   </component>
+   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/student_mangement.iml\" filepath=\"$PROJECT_DIR$/student_mangement.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/student_mangement_common/student_mangement_common.iml\" filepath=\"$PROJECT_DIR$/student_mangement_common/student_mangement_common.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/student_mangement_controller/student_mangement_controller.iml\" filepath=\"$PROJECT_DIR$/student_mangement_controller/student_mangement_controller.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/student_mangement_dao/student_mangement_dao.iml\" filepath=\"$PROJECT_DIR$/student_mangement_dao/student_mangement_dao.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/student_mangement_pojo/student_mangement_pojo.iml\" filepath=\"$PROJECT_DIR$/student_mangement_pojo/student_mangement_pojo.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/student_mangement_service/student_mangement_service.iml\" filepath=\"$PROJECT_DIR$/student_mangement_service/student_mangement_service.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision 2f97ca4f2b6f6113f5c106c190aeffb981f767a2)
++++ b/.idea/modules.xml	(date 1637757351766)
+@@ -3,7 +3,6 @@
+   <component name="ProjectModuleManager">
+     <modules>
+       <module fileurl="file://$PROJECT_DIR$/student_mangement.iml" filepath="$PROJECT_DIR$/student_mangement.iml" />
+-      <module fileurl="file://$PROJECT_DIR$/student_mangement_common/student_mangement_common.iml" filepath="$PROJECT_DIR$/student_mangement_common/student_mangement_common.iml" />
+       <module fileurl="file://$PROJECT_DIR$/student_mangement_controller/student_mangement_controller.iml" filepath="$PROJECT_DIR$/student_mangement_controller/student_mangement_controller.iml" />
+       <module fileurl="file://$PROJECT_DIR$/student_mangement_dao/student_mangement_dao.iml" filepath="$PROJECT_DIR$/student_mangement_dao/student_mangement_dao.iml" />
+       <module fileurl="file://$PROJECT_DIR$/student_mangement_pojo/student_mangement_pojo.iml" filepath="$PROJECT_DIR$/student_mangement_pojo/student_mangement_pojo.iml" />
