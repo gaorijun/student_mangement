@@ -16,10 +16,10 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="student_mangement" target="1.8" />
-      <module name="student_mangement_common" target="1.8" />
+      <module name="student_mangement_common" target="8" />
       <module name="student_mangement_controller" target="1.8" />
       <module name="student_mangement_dao" target="1.8" />
-      <module name="student_mangement_pojo" target="1.8" />
+      <module name="student_mangement_pojo" target="8" />
       <module name="student_mangement_service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
