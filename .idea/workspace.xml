@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1acc77e8-7b8a-42b2-b57d-7457ea878d3b" name="Default Changelist" comment="" />
-    <list id="5577b829-f3f2-4812-8aeb-337c39ead63a" name="Revert &quot;测试连接&quot;" comment="Revert &quot;测试连接&quot;&#10;&#10;This reverts commit 88464121">
-      <change beforePath="$PROJECT_DIR$/student_mangement_controller/src/main/resources/application.properties" beforeDir="false" />
+    <list default="true" id="1acc77e8-7b8a-42b2-b57d-7457ea878d3b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/student_mangement_common/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +31,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -147,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637759063555</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Revert &quot;测试连接&quot;&#10;&#10;This reverts commit 884641218139ad2aa55a5bfc4f0b36f95bcf4635.&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1637759321514</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637759321514</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,16 +186,43 @@
             </State>
           </value>
         </entry>
+        <entry key="d8fcb449-d04a-4d5b-9ad6-cb02a0387041">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="OPEN_GENERIC_TABS">
       <map>
         <entry key="81edde94-ed3d-4ac8-bcfa-79c3756eb9ca" value="TOOL_WINDOW" />
+        <entry key="d8fcb449-d04a-4d5b-9ad6-cb02a0387041" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="测试连接" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试连接" />
+    <MESSAGE value="Revert &quot;测试连接&quot;&#10;&#10;This reverts commit 884641218139ad2aa55a5bfc4f0b36f95bcf4635.&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;测试连接&quot;&#10;&#10;This reverts commit 884641218139ad2aa55a5bfc4f0b36f95bcf4635.&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
 </project>
